@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerodha Clone</title>
+  <link rel="icon" type="image/png" href="images/zerodha_logo_2.png">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css" />
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+      <img src="images/zerodha_logo.png" alt="My Logo">
+  <h2><span class="blue">ZERO</span><span class="dark">DHA</span></h2></div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <button class="signup-btn">Sign up</button>
+    </div>
+  </header>
+
+  <section class="signup-hero" data-aos="fade-up">
+    <div class="signup-text">
+      <h2>Start your investment journey today </h2>
+      <p>Join India’s fastest-growing trading community. Open your free Demat and trading account in minutes!</p>
+    </div>
+  
+    <div class="signup-container">
+      <div class="signup-left">
+        <img src="images/signup-main_2.png" alt="Zerodha app preview" class="signup-img" />
+      </div>
+  
+      <div class="signup-right" data-aos="fade-left">
+        <h2>Signup now</h2>
+        <p>Or track your existing application</p>
+  
+        <form id="signupForm">
+          <div class="phone-input">
+            <span class="country-code">+91</span>
+            <input type="tel" id="mobileNumber" placeholder="Enter your mobile number" required />
+          </div>
+          <button type="submit" class="btn-primary">Get OTP</button>
+        </form>
+  
+        <p class="terms">
+          By proceeding, you agree to the Zerodha <a href="#">terms</a> & <a href="#">privacy policy</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== INVESTMENT OPTIONS SECTION ===== -->
+<section class="investment-section" data-aos="fade-up">
+    <h2 class="section-title">Investment Options with Zerodha Demat Account</h2>
+  
+    <div class="investment-grid">
+      <div class="investment-card">
+        <img src="images/stocks.png" alt="Stocks">
+        <div class="overlay">
+          <div class="overlay-text">
+            <h3>Stocks</h3>
+            <p>Invest in top companies and grow with the market.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="investment-card">
+        <img src="images/mutualfunds.png" alt="Mutual Funds">
+        <div class="overlay">
+          <div class="overlay-text">
+            <h3>Mutual Funds</h3>
+            <p>Diversify your investments with expert-managed funds.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="investment-card">
+        <img src="images/IPO.png" alt="Real Estate">
+        <div class="overlay">
+          <div class="overlay-text">
+            <h3>IPO</h3>
+            <p>Apply to the latest IPOs instantly via UPI</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="investment-card">
+        <img src="images/futures.png" alt="Gold">
+        <div class="overlay">
+          <div class="overlay-text">
+            <h3>Futures & options</h3>
+            <p>Hedge and mitigate market risk through simplified F&O trading</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="explore-btn-wrapper">
+      <button class="explore-btn">Explore Investments</button>
+    </div>
+  </section>
+
+  <section class="steps-section">
+    <div class="steps-container">
+      <div class="steps-image">
+        <img src="images/steps.png" alt="Demat account illustration">
+      </div>
+  
+      <div class="steps-content">
+        <h2>Steps to open a demat account with Zerodha</h2>
+        <div class="step-item">
+          <span class="step-number">01</span>
+          <p>Enter the requested details</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">02</span>
+          <p>Complete e-sign & verification</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">03</span>
+          <p>Start investing!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section" id="benefits">
+    <div class="benefits-container">
+      <div class="benefits-image" data-aos="fade-right">
+        <img src="images/benefits.png" alt="Benefits illustration">
+      </div>
+  
+      <div class="benefits-content" data-aos="fade-left">
+        <h2>Benefits of opening a Zerodha demat account</h2>
+  
+        <div class="benefit" data-aos="fade-up" data-aos-delay="100">
+          <h3>Unbeatable pricing</h3>
+          <p>Zero charges for equity & mutual fund investments. Flat ₹20 fees for intraday and F&O trades.</p>
+        </div>
+  
+        <div class="benefit" data-aos="fade-up" data-aos-delay="200">
+          <h3>Best investing experience</h3>
+          <p>Simple and intuitive trading platform with an easy-to-understand user interface.</p>
+        </div>
+  
+        <div class="benefit" data-aos="fade-up" data-aos-delay="300">
+          <h3>No spam or gimmicks</h3>
+          <p>Committed to transparency — no spam, gamification, or intrusive push notifications.</p>
+        </div>
+  
+        <div class="benefit" data-aos="fade-up" data-aos-delay="400">
+          <h3>The Zerodha universe</h3>
+          <p>More than just an app — gain free access to the entire ecosystem of partner products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <h2>Explore Different Account Types</h2>
+
+  <div class="card-grid">
+
+    <!-- Individual Account -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!--  ICON PATH: Replace the src below with your actual path -->
+          <img class="icon" src="icons/individual.svg" alt="Individual Account Icon">
+          <h3>Individual Account</h3>
+          <p>Invest in equity, mutual funds and derivatives.</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Most common account type</li>
+            <li>Easy KYC process</li>
+            <li>Full product access</li>
+          </ul>
+          <a href="#" class="btn">Open Account</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HUF Account -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!--  ICON PATH -->
+          <img class="icon" src="icons/HUF.svg" alt="HUF Account Icon">
+          <h3>HUF Account</h3>
+          <p>Make tax-efficient investments for your family.</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Joint family investment</li>
+            <li>Tax-saving potential</li>
+            <li>Requires HUF deed</li>
+          </ul>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NRI Account -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!--  ICON PATH -->
+          <img class="icon" src="icons/NRI.svg" alt="NRI Account Icon">
+          <h3>NRI Account</h3>
+          <p>Invest in equity, mutual funds, debentures, and more.</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Designed for NRIs</li>
+            <li>Repatriable & non-repatriable</li>
+            <li>Linked with NRE/NRO account</li>
+          </ul>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Minor Account -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!--  ICON PATH -->
+          <img class="icon" src="icons/minor.png" alt="Minor Account Icon">
+          <h3>Minor Account</h3>
+          <p>Teach your little ones about money & invest for their future.</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Operated by guardian</li>
+            <li>Education-focused</li>
+            <li>Future-ready investments</li>
+          </ul>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Corporate Account -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!-- ICON PATH -->
+          <img class="icon" src="icons/corporate.png" alt="Corporate Account Icon">
+          <h3>Corporate / LLP / Partnership</h3>
+          <p>Manage your business surplus and investments easily.</p>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Business-focused accounts</li>
+            <li>Custom documentation</li>
+            <li>Multi-user access</li>
+          </ul>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <section class="faq-section">
+    <h2>FAQs</h2>
+    <div class="faq-container">
+  
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          What is a Zerodha account?
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          A Zerodha account is a combined demat and trading account that allows investors to buy, sell, and hold securities digitally.
+        </div>
+      </div>
+  
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          What documents are required to open a demat account?
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          You'll need PAN, Aadhaar, a photograph, and a cancelled cheque or bank statement. Verification is typically completed online.
+        </div>
+      </div>
+  
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          Is Zerodha account opening free?
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Opening an account requires a small one-time fee. You can find exact pricing details on Zerodha’s pricing page.
+        </div>
+      </div>
+  
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          Are there any maintenance charges for a demat account?
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Yes, an annual maintenance charge (AMC) is applicable, generally around ₹300/year.
+        </div>
+      </div>
+  
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I open a demat account without a bank account?
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          No, a linked bank account is mandatory to open a demat/trading account with Zerodha.
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="brand">
+        <img src="images/zerodha_logo.png" alt="Personal Logo" class="brand-logo" />
+        <h1 class="brand-name"><span class="zero">ZERO</span><span class="dha">DHA</span></h1>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Account</h3>
+          <ul>
+            <li>Open demat account</li>
+            <li>Minor demat account</li>
+            <li>NRI demat account</li>
+            <li>Commodity</li>
+            <li>Dematerialisation</li>
+            <li>Fund transfer</li>
+            <li>MTF</li>
+            <li>Referral program</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li>Contact us</li>
+            <li>Support portal</li>
+            <li>How to file a complaint?</li>
+            <li>Status of complaints</li>
+            <li>Bulletin</li>
+            <li>Circular</li>
+            <li>Z-Connect blog</li>
+            <li>Downloads</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Philosophy</li>
+            <li>Press & media</li>
+            <li>Careers</li>
+            <li>Zerodha Cares (CSR)</li>
+            <li>Zerodha.tech</li>
+            <li>Open source</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>Upcoming IPOs</li>
+            <li>Brokerage charges</li>
+            <li>Market holidays</li>
+            <li>Economic calendar</li>
+            <li>Calculators</li>
+            <li>Markets</li>
+            <li>Sectors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="icons/x-twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+        <a href="#"><img src="icons/whatsapp.svg" alt="Whatsapp"/></a>
+        <a href="#"><img src="icons/telegram.svg" alt="Telegram"/></a>
+      </div>
+      
+    </div>
+  </footer>
+
+ 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
+  

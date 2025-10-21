@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerodha Clone</title>
+  <link rel="icon" type="image/png" href="images/zerodha_logo_2.png">
+
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css" />
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+      <img src="images/zerodha_logo.png" alt="My Logo">
+  <h2><span class="blue">ZERO</span><span class="dark">DHA</span></h2></div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <a href="signup.html">
+      <button class="signup-btn"> Sign Up </button>
+      </a>
+    </div>
+  </header>
+
+  <section class="about-header text-center">
+    <h1 class="typewriter-text"></h1>
+  </section>
+
+  <!-- ===== Founder section (place AFTER the typewriter block) ===== -->
+<section id="founder-section" class="about-founder-section" aria-labelledby="founder-heading">
+    <div class="about-founder-wrapper">
+  
+      <!-- Heading placed at top (below typewriter) -->
+      <!-- <div class="about-founder-heading">
+        <h2 id="founder-heading">Meet Our People</h2>
+      </div> -->
+
+      <div class="right-card">
+        <h2>Meet Our People</h2>
+      </div>
+      
+  
+      <!-- Row: left = image, right = founder card -->
+      <div class="about-founder-row">
+        <!-- Left: Image -->
+        <div class="about-founder-photo" data-aos="fade-right">
+          <!-- keep your original circular image if you prefer -->
+          <img src="images/founder.png" alt="Founder photo of Nithin Kamath" class="about-founder-photo__img">
+        </div>
+  
+        <!-- Right: Card -->
+        <div class="about-founder-info" data-aos="fade-left">
+          <div class="about-founder-card">
+            <h3 class="about-founder-card__name">Nithin Kamath</h3>
+            <p class="about-founder-card__role">Founder &amp; CEO, Zerodha</p>
+            <p class="about-founder-card__bio">
+              Nithin Kamath founded Zerodha with the vision to make investing simple,
+              affordable, and accessible to every Indian. His leadership continues
+              to shape India’s largest retail brokerage with transparency and innovation.
+              He is a member of the SEBI Secondary Market Advisory Committee (SMAC) and the Market Data Advisory Committee (MDAC). Playing basketball is his zen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zerodha Team Introduction Section -->
+<section id="zerodha-team">
+    <div class="wrapper zerodha-team-section">
+      <div class="container text-center">
+        <div class="text-center pb-4">
+          <h2>Meet Our Zerodha Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-10 offset-lg-1">
+            <div id="teamCarousel" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Member 1"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Member 2"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2" aria-label="Member 3"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="3" aria-label="Member 4"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="4" aria-label="Member 5"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="5" aria-label="Member 6"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="6" aria-label="Member 7"></button>
+              </div>
+  
+              <div class="carousel-inner">
+  
+                <!-- Member 1 -->
+                <div class="carousel-item active">
+                  <div class="carousel-caption">
+                    <img src="images/nikhilkamath.png" alt="Member 1">
+                    <p>Nikhil is an astute and experienced investor, and he heads financial planning at Zerodha. An avid reader, he always appreciates a good game of chess.</p>
+                    <h4>Nikhil Kamath</h4>
+                    <h5>Co-Founder & CFO</h5>
+                  </div>
+                </div>
+  
+                <!-- Member 2 -->
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="images/kailashnadh.png" alt="Member 2">
+                    <p>Kailash has a PhD in Artificial Intelligence & Computational Linguistics, and is the brain behind all our technology and products. He has been a developer from his adolescence and continues to write code every day.</p>
+                    <h4>Dr.Kailash Nadh</h4>
+                    <h5>CTO</h5>
+                  </div>
+                </div>
+  
+                <!-- Member 3 -->
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="images/venumadhav.png" alt="Member 3">
+                    <p>Venu is the backbone of Zerodha taking care of operations and ensuring that we are compliant to rules and regulations. He has over a dozen certifications in financial markets and is also proficient in technical analysis. Workouts, cycling, and adventuring is what he does outside of Zerodha.</p>
+                    <h4>Venu Madhav</h4>
+                    <h5>COO</h5>
+                  </div>
+                </div>
+  
+                <!-- Member 4 -->
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="images/hanandelvi.png" alt="Member 4">
+                    <p>We take pride in the way we support our clients, and Hanan is responsible for this with his never ending flow of energy. He is the man behind many of our support initiatives that have helped us stay ahead of the game. A free thinker, Hanan can be seen posing as one in his free time.</p>
+                    <h4>Hanan Delvi</h4>
+                    <h5>CCO</h5>
+                  </div>
+                </div>
+  
+                <!-- Member 5 -->
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="images/seemapatil.png" alt="Member 5">
+                    <p>Seema who has lead the quality team since the beginning of Zerodha, is now a director. She is an extremely disciplined fitness enthusiast.</p>
+                    <h4>Seema Patil</h4>
+                    <h5>Director</h5>
+                  </div>
+                </div>
+  
+                <!-- Member 6 -->
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="images/karthikrangappa.png" alt="Member 6">
+                    <p>Bridges finance and technology by ensuring regulatory compliance while optimizing business performance.</p>
+                    <h4>Kartik Rangappa</h4>
+                    <h5>Chief of Education</h5>
+                  </div>
+                </div>
+  
+                <!-- Member 7 -->
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="images/austinprakesh.png" alt="Member 7">
+                    <p>Always experimenting with new ideas to enhance user engagement and simplify communication through data insights.</p>
+                    <h4>Austin Prakesh</h4>
+                    <h5>Director Strategy</h5>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="brand">
+        <img src="images/zerodha_logo.png" alt="Personal Logo" class="brand-logo" />
+        <h1 class="brand-name"><span class="zero">ZERO</span><span class="dha">DHA</span></h1>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Account</h3>
+          <ul>
+            <li>Open demat account</li>
+            <li>Minor demat account</li>
+            <li>NRI demat account</li>
+            <li>Commodity</li>
+            <li>Dematerialisation</li>
+            <li>Fund transfer</li>
+            <li>MTF</li>
+            <li>Referral program</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li>Contact us</li>
+            <li>Support portal</li>
+            <li>How to file a complaint?</li>
+            <li>Status of complaints</li>
+            <li>Bulletin</li>
+            <li>Circular</li>
+            <li>Z-Connect blog</li>
+            <li>Downloads</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Philosophy</li>
+            <li>Press & media</li>
+            <li>Careers</li>
+            <li>Zerodha Cares (CSR)</li>
+            <li>Zerodha.tech</li>
+            <li>Open source</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>Upcoming IPOs</li>
+            <li>Brokerage charges</li>
+            <li>Market holidays</li>
+            <li>Economic calendar</li>
+            <li>Calculators</li>
+            <li>Markets</li>
+            <li>Sectors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="icons/x-twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+        <a href="#"><img src="icons/whatsapp.svg" alt="Whatsapp"/></a>
+        <a href="#"><img src="icons/telegram.svg" alt="Telegram"/></a>
+      </div>
+      
+    </div>
+  </footer>
+  
+
+  <!-- JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="js/script.js"></script>
+  <script>AOS.init();</script>
+
+  <script>
+    const text = "Empowering every Indian investor, one trade at a time.";
+    const el = document.querySelector(".typewriter-text");
+    let i = 0;
+  
+    function type() {
+      if (i < text.length) {
+        el.textContent = text.substring(0, i + 1);
+        i++;
+        setTimeout(type, 80); // typing speed
+      } else {
+        // once typing completes, pause for a while, then restart
+        setTimeout(() => {
+          el.textContent = "";
+          i = 0;
+          type();
+        }, 2500); // how long sentence stays visible
+      }
+    }
+  
+    type();
+  </script>
+
+  <!-- Include Swiper JS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 3,      // number of members visible
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  
+
+  
+  
+</body>
+</html>

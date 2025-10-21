@@ -1,0 +1,550 @@
+<!-- ===== PRICING PAGE (full redesign block) ===== -->
+<!-- Add AOS CSS in head if not present:
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+-->
+<header>
+  <div class="container nav">
+    <div class="logo">
+    <img src="images/zerodha_logo.png" alt="My Logo">
+<h2><span class="blue">ZERO</span><span class="dark">DHA</span></h2></div>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+    <a href="signup.html">
+    <button class="signup-btn"> Sign Up </button>
+    </a>
+  </div>
+</header>
+<section id="pricing" class="pricing-section" data-aos="fade-up">
+  <div class="container">
+    <!-- HERO -->
+    <div class="pricing-hero" data-aos="fade-up">
+      <h1 class="pricing-title">Simple. Transparent. Affordable.</h1>
+      <p class="pricing-lead">
+        No hidden brokerage. Clear rates across equity, derivatives and mutual funds built for traders and investors.
+      </p>
+    </div>
+
+    <!-- PRICING CARDS -->
+    <div class="pricing-cards" aria-label="key pricing highlights">
+      <article class="pricing-card" data-aos="fade-up" data-aos-delay="80">
+        <img src="images/price-0.png" alt="Free equity delivery" class="card-icon">
+        <h3>Free equity delivery</h3>
+        <p>Zero brokerage for equity delivery trades keep more of your long-term gains.</p>
+      </article>
+
+      <article class="pricing-card" data-aos="fade-up" data-aos-delay="160">
+        <img src="images/price-20.png" alt="₹20 per order" class="card-icon">
+        <h3>Intraday & F&O</h3>
+        <p>Flat ₹20 per executed order across intraday and F&O predictable and fair.</p>
+      </article>
+
+      <article class="pricing-card" data-aos="fade-up" data-aos-delay="240">
+        <img src="images/price-0.png" alt="Free direct mutual funds" class="card-icon">
+        <h3>Free direct mutual funds</h3>
+        <p>Invest in direct plans with zero commission and transparent fund purchases.</p>
+      </article>
+    </div>
+
+    <!-- MAIN GRID: LEFT = TABLES, RIGHT = Details/FAQ -->
+    <div class="pricing-grid">
+      <!-- LEFT: TABS WITH TABLES -->
+      <div class="pricing-left" data-aos="fade-up">
+        <div class="tabs" role="tablist" aria-label="pricing segments">
+          <button class="tab-btn active" data-tab="tab-equity" role="tab" aria-selected="true">Equity</button>
+          <button class="tab-btn" data-tab="tab-currency" role="tab" aria-selected="false">Currency</button>
+          <button class="tab-btn" data-tab="tab-commodity" role="tab" aria-selected="false">Commodity</button>
+        </div>
+
+        <div class="tab-panels">
+          <!-- EQUITY TAB -->
+          <div id="tab-equity" class="tab-panel active" role="tabpanel">
+            <h4>Equity charges</h4>
+            <table class="info-table" summary="Equity pricing table">
+              <thead>
+                <tr><th>Item</th><th>Rate / Fee</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Equity Delivery Brokerage</td><td>₹0</td><td>No brokerage for delivery.</td></tr>
+                <tr><td>Intraday / MIS / BTST</td><td>₹20 per order</td><td>Per executed order, irrespective of trade size.</td></tr>
+                <tr><td>Equity BTST</td><td>₹20</td><td>Same as intraday flat fee.</td></tr>
+                <tr><td>STT / Transaction charges</td><td>As per exchange</td><td>Passed through without markup.</td></tr>
+                <tr><td>GST on brokerage</td><td>18% (on brokerage)</td><td>Added where applicable.</td></tr>
+              </tbody>
+            </table>
+
+            <div class="explain-block">
+              <strong>How to read this:</strong>
+              <p>The ₹20 charge is a flat fee per executed intraday/F&O order. For delivery trades, we charge ₹0 brokerage so long-term investors pay nothing in brokerage.</p>
+            </div>
+          </div>
+
+          <!-- CURRENCY TAB -->
+          <div id="tab-currency" class="tab-panel" role="tabpanel" hidden>
+            <h4>Currency & derivatives</h4>
+            <table class="info-table">
+              <thead>
+                <tr><th>Item</th><th>Rate</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Currency Intraday</td><td>₹20 per order</td><td>Flat fee per executed currency order.</td></tr>
+                <tr><td>Currency Delivery</td><td>Market fees</td><td>Charged as per exchange rules.</td></tr>
+                <tr><td>Futures / Options</td><td>₹20 per order</td><td>Same flat fee across segments.</td></tr>
+                <tr><td>Clearing & other charges</td><td>As applicable</td><td>Passed from exchanges/clearinghouses.</td></tr>
+              </tbody>
+            </table>
+
+            <div class="explain-block">
+              <p>Currency and derivatives follow the same flat-fee philosophy for predictability. Exchange levies and clearing charges are charged separately.</p>
+            </div>
+          </div>
+
+          <!-- COMMODITY TAB -->
+          <div id="tab-commodity" class="tab-panel" role="tabpanel" hidden>
+            <h4>Commodity</h4>
+            <table class="info-table">
+              <thead>
+                <tr><th>Item</th><th>Rate</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Commodity Intraday</td><td>₹20 per order</td><td>Flat per executed order.</td></tr>
+                <tr><td>Commodity Delivery</td><td>Exchange levies</td><td>Charged as per exchange rules.</td></tr>
+                <tr><td>GST & STT</td><td>As applicable</td><td>Added to applicable charges.</td></tr>
+              </tbody>
+            </table>
+
+            <div class="explain-block">
+              <p>Commodity trades follow predictable costs with a flat per-order brokerage for intraday trades. Delivery & statutory levies are separate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: DETAILS, COLLAPSIBLES & FAQ -->
+      <aside class="pricing-right" data-aos="fade-up">
+        <div class="detail-card">
+          <h4>Charges for account opening</h4>
+          <ul class="small-list">
+            <li><strong>Basic account</strong>: ₹0 (online)</li>
+            <li><strong>Demat account</strong>: ₹0 (first year promotions)</li>
+            <li><strong>Other services</strong>: PAN/KYC verification as per government fees</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <h4>Annual maintenance (AMC)</h4>
+          <p class="muted">A yearly DP/AMC charge may apply depending on your plan. See plan details below.</p>
+          <div class="charge-row">
+            <div>DP AMC (per year)</div>
+            <div><strong>₹0 - ₹300</strong></div>
+          </div>
+        </div>
+
+        <div class="accordion" id="pricing-accordion">
+          <button class="acc-toggle" aria-expanded="false">Charges for external web added services</button>
+          <div class="acc-panel" hidden>
+            <p>Third-party fees and value-added services (API, third-party analytics) have separate charges. Contact support for enterprise pricing.</p>
+          </div>
+
+          <button class="acc-toggle" aria-expanded="false">Other charges (examples)</button>
+          <div class="acc-panel" hidden>
+            <ul>
+              <li>Physical contract note: ₹20</li>
+              <li>Cheque bounce charges: ₹100</li>
+              <li>Re-attempt of KYC: Govt fees applicable</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <h4>Common questions</h4>
+          <details>
+            <summary>Why is there a flat ₹20 for intraday?</summary>
+            <p>Flat charges make trading cost predictable across order sizes and segments. This is simpler than percentage-based brokerage for active intraday traders.</p>
+          </details>
+
+          <details>
+            <summary>Are exchange/stamp taxes included?</summary>
+            <p>No. Exchange levies, STT, GST and statutory taxes are passed through and shown separately on your contract note.</p>
+          </details>
+        </div>
+      </aside>
+    </div>
+
+    <!-- SMALL FOOTER WITH CTA -->
+    <!-- <div class="pricing-cta" data-aos="fade-up">
+      <p>Ready to get started? Open an account in minutes or talk to our support for institutional pricing.</p>
+      <div class="cta-row">
+        <a href="/open-account" class="btn btn-primary">Open an account</a>
+        <a href="/pricing-details" class="btn btn-ghost">Download full chargesheet (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section> -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="brand">
+      <img src="images/zerodha_logo.png" alt="Personal Logo" class="brand-logo" />
+      <h1 class="brand-name"><span class="zero">ZERO</span><span class="dha">DHA</span></h1>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Account</h3>
+        <ul>
+          <li>Open demat account</li>
+          <li>Minor demat account</li>
+          <li>NRI demat account</li>
+          <li>Commodity</li>
+          <li>Dematerialisation</li>
+          <li>Fund transfer</li>
+          <li>MTF</li>
+          <li>Referral program</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li>Contact us</li>
+          <li>Support portal</li>
+          <li>How to file a complaint?</li>
+          <li>Status of complaints</li>
+          <li>Bulletin</li>
+          <li>Circular</li>
+          <li>Z-Connect blog</li>
+          <li>Downloads</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li>About</li>
+          <li>Philosophy</li>
+          <li>Press & media</li>
+          <li>Careers</li>
+          <li>Zerodha Cares (CSR)</li>
+          <li>Zerodha.tech</li>
+          <li>Open source</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Upcoming IPOs</li>
+          <li>Brokerage charges</li>
+          <li>Market holidays</li>
+          <li>Economic calendar</li>
+          <li>Calculators</li>
+          <li>Markets</li>
+          <li>Sectors</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="icons/x-twitter.svg" alt="Twitter" /></a>
+      <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
+      <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+      <a href="#"><img src="icons/whatsapp.svg" alt="Whatsapp"/></a>
+      <a href="#"><img src="icons/telegram.svg" alt="Telegram"/></a>
+    </div>
+    
+  </div>
+</footer>
+
+<!-- AOS and small JS to enable tabs and accordions. Place before </body> -->
+<!-- Add AOS script if not present:
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+-->
+<script>
+  // Init AOS (if included)
+  if (window.AOS) {
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+  }
+
+  // Tabs logic
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      // toggle active on buttons
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.toggle('active', b === btn);
+        b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+      });
+      // panels
+      document.querySelectorAll('.tab-panel').forEach(panel => {
+        const show = panel.id === target;
+        panel.classList.toggle('active', show);
+        panel.hidden = !show;
+      });
+    });
+  });
+
+  // Accordions for right column
+  document.querySelectorAll('.acc-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const panel = toggle.nextElementSibling;
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      if (panel) {
+        panel.hidden = expanded;
+      }
+    });
+  });
+</script>
+
+<style>
+  /* ---------- Container & base ---------- */
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .pricing-section { background: linear-gradient(180deg,#f8fafc 0%, #f1f5f9 100%); padding: 4rem 0; font-family:  'Poppins', 'Times New Roman', sans-serif; color:#0f172a; }
+  .pricing-hero { text-align:center; margin-bottom: 2rem; }
+  .pricing-title { font-size: 2.2rem; font-weight: 800; margin:0 0 .5rem 0; color:#0b1220; }
+  .pricing-lead { color:#475569; margin: 0 auto 1.5rem; max-width:700px; }
+
+  /* ---------- Cards ---------- */
+  .pricing-cards { display:flex; gap:1.25rem; justify-content:center; margin-bottom: 2.25rem; flex-wrap:wrap; }
+  .pricing-card { background:#fff; border-radius:14px; padding:1.75rem; min-width:240px; max-width:320px; box-shadow:0 8px 18px rgba(16,24,40,.06); text-align:center; transition:transform .25s ease, box-shadow .25s ease; }
+  .pricing-card:hover { transform: translateY(-8px); box-shadow:0 18px 40px rgba(16,24,40,.09); }
+  .card-icon { width:68px; height:auto; margin-bottom: .85rem; display:inline-block; }
+
+  /* ---------- Grid layout ---------- */
+  .pricing-grid { display:grid; grid-template-columns: 1fr 360px; gap: 2rem; align-items:start; margin-top: 1.5rem; }
+  @media (max-width:980px){ .pricing-grid{ grid-template-columns: 1fr; } }
+
+  /* ---------- Tabs & tables ---------- */
+  .tabs { display:flex; gap:.5rem; border-radius:10px; background:transparent; margin-bottom:1rem; justify-content:flex-start; }
+  .tab-btn { background:transparent; border:0; padding:.5rem .85rem; cursor:pointer; font-weight:600; color:#334155; border-radius:8px; }
+  .tab-btn.active { background: linear-gradient(90deg,#eef2ff,#f0f9ff); color:#0f172a; box-shadow: inset 0 -1px 0 rgba(15,23,42,.02); }
+  .tab-panel { background:#fff; border-radius:12px; padding:1rem 1rem 1.25rem; box-shadow: 0 6px 18px rgba(2,6,23,.04); }
+  .tab-panel + .tab-panel { margin-top: 1rem; }
+  .tab-panel h4 { margin:0 0 .6rem 0; font-size:1.05rem; }
+
+  .info-table { width:100%; border-collapse:collapse; margin-top:.5rem; font-size:0.95rem; }
+  .info-table th, .info-table td { text-align:left; padding:.7rem .85rem; border-bottom: 1px solid #eef2f6; color:#1e293b; vertical-align:top; }
+  .info-table thead th { background: transparent; font-weight:700; color:#0f172a; }
+  .explain-block { margin-top:.9rem; font-size:.92rem; color:#475569; background:#f8fafc; padding:.7rem; border-radius:8px; }
+
+  /* ---------- Right column cards / accordion ---------- */
+  .pricing-right { display:flex; flex-direction:column; gap:1rem; }
+  .detail-card { background:#fff; border-radius:12px; padding:1rem; box-shadow: 0 8px 18px rgba(2,6,23,.03); }
+  .detail-card h4 { margin:0 0 .6rem 0; font-size:1rem; }
+  .small-list { margin:0; padding-left:1rem; color:#334155; }
+  .charge-row { display:flex; justify-content:space-between; padding-top:.35rem; font-weight:600; color:#0f172a; }
+  .muted { color:#64748b; font-size:.95rem; }
+
+  .accordion .acc-toggle { width:100%; background:#fff; border:1px solid #e6eef9; padding:.65rem .8rem; border-radius:10px; cursor:pointer; text-align:left; font-weight:700; color:#0f172a; }
+  .acc-panel { padding:.7rem .9rem; background:#f8fafc; border-radius:8px; margin-top:.45rem; color:#334155; }
+
+  .faq-card details summary { cursor:pointer; padding:.6rem .8rem; background:#fff; border-radius:8px; margin-bottom:.5rem; font-weight:700; }
+  .faq-card details p { padding:.5rem .8rem; margin:0; background:#f8fafc; border-radius:6px; color:#475569; }
+
+  /* ---------- CTA ---------- */
+  .pricing-cta { text-align:center; margin-top:1.8rem; }
+  .cta-row { display:flex; gap:.75rem; justify-content:center; margin-top:.75rem; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:.7rem 1.05rem; border-radius:10px; text-decoration:none; font-weight:700; }
+  .btn-primary { background:linear-gradient(90deg,#0047b3,#1e3a8a); color:#fff; box-shadow:0 8px 24px rgba(14,82,255,.08); }
+  .btn-ghost { border:1px solid #cfe7ff; color:#0b1220; background:#fff; }
+
+  /* Small helpers */
+  .muted { color:#64748b; font-size:.95rem; }
+  .small { font-size:.92rem; color:#6b7280; }
+  .info { color:#0b1220; }
+
+  /* responsive tweaks */
+  @media (max-width:640px){
+    .card-icon { width:56px; }
+    .pricing-title { font-size:1.5rem; }
+    .pricing-card { padding:1rem; }
+    .tabs{ overflow:auto; }
+  }
+  /* ===== HEADER ===== */
+  header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  /* .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #387ed1;
+  }
+  
+  .logo span {
+    color: #2c3e50;
+  } */
+   /* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* spacing between logo image and text */
+  }
+  
+  .logo img {
+    height: 35px;  /* adjust size as needed */
+    width: auto;
+  }
+  
+  .logo h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .logo .blue {
+    color: #387ed1; /* Zerodha blue */
+  }
+  
+  .logo .dark {
+    color: #2c3e50; /* Dark grey tone */
+  }
+  
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #387ed1;
+  }
+  
+  .signup-btn {
+    background: #387ed1;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .signup-btn:hover {
+    background: #2c3e50;
+  }
+
+  /* footer */
+.footer {
+    background: linear-gradient(#dbeafe, #ffffff);
+    padding: 60px 30px 30px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
+  }
+  
+  .footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .brand-logo {
+    height: 30px;
+    margin-right: 12px;
+  }
+  
+  .brand-name {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .brand-name .zero {
+    color: #387ed1;
+  }
+  
+  .brand-name .dha {
+    color: #2c3e50;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .footer-col h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-col ul li:hover {
+    color: #387ed1;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #6b7280;
+  }
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    opacity: 0.7;
+  }
+</style>
